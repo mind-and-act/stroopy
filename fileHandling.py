@@ -3,28 +3,28 @@ import csv
 import os
 import re
 
-def parse_instructions(input, START, END):
 
-        m = re.compile(r'%s(.*)%s' % (START, END), re.DOTALL | re.MULTILINE)
-        text = m.search(input).group(1)
+def parse_instructions(inputt, START, END):
+    m = re.compile(r'%s(.*)%s' % (START, END), re.DOTALL | re.MULTILINE)
+    text = m.search(inputt).group(1)
 
-        return text
+    return text
 
 
 def read_instructions_file(instructionsfile, START, END):
-
     with codecs.open(instructionsfile, 'r', encoding='utf-8') as instructions:
         input_data = instructions.read()
         text = parse_instructions(input_data, START, END)
 
     return text
 
+
 def create_dir(directory):
     if not os.path.exists(directory):
         os.makedirs(directory)
 
-def write_csv(fileName, thisTrial):
 
+def write_csv(fileName, thisTrial):
     full_path = os.path.abspath(fileName)
     directory = os.path.dirname(full_path)
     create_dir(directory)
