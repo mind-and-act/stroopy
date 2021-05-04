@@ -5,16 +5,16 @@ A simple Stroop Task programmed using PsychoPy
 
 
 ## Instructions
-- [x] Swedish
 - [x] English
+- [x] French
 
 
-Instructions (both English and Swedish) are found in the file "INSTRUCTIONS". This file is read and parsed by some
+Instructions (both English and French) are found in the file ``instructions.ini``. This file is read and parsed by some
 functions. The set up of the functions is that Swedish - SwedishEnd words will mark where the swedish instructions are.
 The words ending with START and END marks where the scripts (i.e., the functions) will find instructions:
 
 - instructions - The instructions on how to perform the task - the first that will show
-- practice - How to start the experiment (i.e., press SPACE) - the first that will show (on the bottom of the screen
+- practice - How to start the experiment (i.e., press SPACE) - the first that will show (on the bottom of the screen)
 - test - After practice trials - informing that the test part starts and questions should be asked now
 - done - Telling participants that the experiment is done
 
@@ -27,8 +27,7 @@ The words ending with START and END marks where the scripts (i.e., the functions
 
 Feel free to contribute with other languages.
 
-As for now to add more languages add a language in the list on line 21 (['Swedish', 'English']). After this is done
-you need to follow how the INSTRUCTIONS file is set-up (as described above). Also, the translation function ned to be
-updated.
+As for now to add more languages add a language in the list on line 21 (['Français', 'English']). After this is done
+you need to follow how the ``instructions.ini`` file is set up. Also, the translation function needs to be updated.
 
 ---------

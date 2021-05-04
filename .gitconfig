@@ -1,0 +1,27 @@
+[core]
+	excludesfile = ~/.gitignore
+	editor = kate
+	autocrlf = input
+	symlinks = true
+[user]
+	name = Rodrigo BALP
+	email = rodrigo.balp@altrna.com
+	signingkey = 13831EE0ECE50BFC
+[pack]
+	window = 0
+	windowMemory = 100m
+	packSizeLimit = 100m
+	threads = 1
+[commit]
+	gpgsign = true
+[gpg]
+	program = /usr/bin/gpg
+[gui]
+	pruneduringfetch = true
+
+[smartgit "submodule"]
+	fetchalways = false
+	update = true
+	initializenew = true
+[push]
+	recurseSubmodules = check
